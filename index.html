@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="favicon" href="assets/icon/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Arthur Dantas' Portfolio - Back-End Developer specializing in Python and HTML/CSS/JavaScript interfaces.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <!-- Top navigator container -->
+        <section>
+            <header>
+                <nav>
+                    <ul class="nav-bar">
+                        <div class="logo-container"><img id="logo-top" src="assets/icon/site-logo-light.png" alt="site logo"></div>
+                        <input type="checkbox" id="check">
+                        <span class="menu">
+                            <label for="check" class="close-menu"><img src="assets/SVG/close.svg" alt="close menu button" width="32px"></label>
+                            <!-- Portuguese text -->
+                            <ul class="portuguese">
+                                <li><a class="nav-button" href="#home">Home</a></li>
+                                <li><a class="nav-button" href="#about">Sobre</a></li>
+                                <li><a class="nav-button" href="#skills">Skills</a></li>
+                                <li><a class="nav-button" href="#projects">Projetos</a></li>
+                                <li><a class="nav-button" href="#contact">Contato</a></li>
+                            </ul>
+                            <!-- English text -->
+                            <ul class="english">
+                                <li><a class="nav-button" href="#home">Home</a></li>
+                                <li><a class="nav-button" href="#about">About</a></li>
+                                <li><a class="nav-button" href="#skills">Skills</a></li>
+                                <li><a class="nav-button" href="#projects">Projects</a></li>
+                                <li><a class="nav-button" href="#contact">Contact</a></li>
+                            </ul>
+                        </span>
+                        <label for="check" class="open-menu"><img class="menu-btn" src="assets/SVG/site/menu.svg" alt="menu button"></label>
+                        <label class="lang-container" onclick="toggleLanguageMenu()">
+                            <img class="lang-button" src="assets/SVG/top-navigator/language.svg" alt="select language" width="32px">
+                            <div class="lang-menu" id="langMenu">
+                                <span class="lang-option" onclick="changeLanguage('english')">English</span>
+                                <span class="lang-option" onclick="changeLanguage('portuguese')">Português</span>
+                            </div>
+                        </label>
+                        <label class="dm-container"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode-button" src="assets/SVG/top-navigator/moon.svg" alt="dark mode button"></label>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+        <!-- Home container and it's elements -->
+        <section id="home">
+            <div class="home-container">
+                <div class="text-container">
+                    <!-- Portuguese text -->
+                    <h1 class="portuguese">Olá, eu sou <mark class="cyan">Arthur</mark></h1>
+                    <h1 class="portuguese">um programador Back-End.</h1>
+                    <p class="portuguese">Sou um brasileiro amante da programação, gosto de criar interfaces simples e agradáveis aos olhos.</p>
+                    <!-- English text -->
+                    <h1 class="english">Hello, I'm <mark class="cyan">Arthur</mark></h1>
+                    <h1 class="english">a Back-End developer.</h1>
+                    <p class="english">I'm a Brazilian programming lover, I like to create simple and eye-pleasing interfaces.</p>
+                </div>
+                <div class="email-container">
+                    <div id="email"><mark class="cyan">dantas.arthur.contact@gmail.com</mark></div>
+                    <!-- Portuguese text -->
+                    <div id="copy-email">⭠ Clique para copiar.</div>
+                </div>
+                <div class="social-media-container">
+                    <a href="https://github.com/LonelyALpHaz" target="_blank"><img class="social-icon" src="assets/SVG/social/github.svg" alt="GitHub profile"></a>
+                    <a href="https://www.linkedin.com/in/dantas-arthur" target="_blank"><img class="social-icon" src="assets/SVG/social/linkedin.svg" alt="Linkedin profile"></a>
+                    <a href="https://www.instagram.com/dantaas.arthur/" target="_blank"><img class="social-icon" src="assets/SVG/social/instagram.svg" alt="Instagram profile"></a>
+                </div>
+                <div class="image-container">
+                    <img src="assets/SVG/body/developer.svg" width="" alt="developer cartoon">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/JPG/photo.jpg" alt="Profile picture">
+                </div>
+                <div class="about-text">
+                    <!-- Portuguese text -->
+                    <h1 class="portuguese">Sobre mim</h1>
+                    <!-- English text -->
+                    <h1 class="english">About me</h1>
+                    <hr>
+                    <!-- Portuguese text -->
+                    <p class="portuguese">Opa! Meu nome é <b><mark class="cyan">Arthur Dantas</mark></b>, e eu sou um programador brasileiro de 19 anos. Tenho uma paixão por desenvolver ferramentas de automação de tarefas em larga escala usando <mark class="cyan">Python</mark>, bem como criar interfaces simples e bonitas com <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark> e <mark class="cyan">JavaScript</mark>.</p>
+                    <p class="portuguese">Estou sempre me esforçando para evoluir meus projetos e entregar os melhores resultados possíveis. Meus próximos objetivos são aprofundar meu conhecimento em desenvolvimento web e começar a estudar uma nova linguagem de programação.</p>
+                    <!-- English text -->
+                    <p class="english">Hi! My name is <b><mark class="cyan">Arthur Dantas</mark></b>, and I am a 19-year-old Brazilian programmer. I have a passion for developing large-scale task automation tools using <mark class="cyan">Python</mark>, as well as creating simple and beautiful interfaces with <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark> and <mark class="cyan">JavaScript</mark>.</p>
+                    <p class="english">I am always striving to evolve my projects to deliver the best possible results. My next goals are to deepen my knowledge of web development and begin studying a new programming language.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Skills container and it's elements -->
+        <section id="skills">
+            <div class="skills-container">
+                <!-- Portuguese text -->
+                <h1 class="portuguese">Minhas skills</h1>
+                <!-- English text -->
+                <h1 class="english" style="margin-right: 66%;">My skills</h1>
+                <hr>
+                <div class="skills-icons">
+                    <!-- Portuguese text -->
+                    <h2 class="portuguese">Linguagens e Frameworks</h2>
+                    <!-- English text -->
+                    <h2 class="english">Languages and Frameworks</h2>
+                    <div class="tooltip">
+                        <img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+                        <span class="tooltiptext">Python</span>
+                    </div>
+                    <div class="tooltip">
+                        <img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span class="tooltiptext">JavaScript</span>
+                    </div>
+                    <div class="tooltip">
+                        <img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5">
+                        <span class="tooltiptext">HTML5</span>
+                    </div>
+                    <div class="tooltip">
+                        <img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3">
+                        <span class="tooltiptext">CSS3</span>
+                    </div>
+                    <div class="tooltip">
+                        <img class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" alt="Markdown">
+                        <span class="tooltiptext">Markdown</span>
+                    </div>
+                </div>
+                <div class="skills-icons">
+                    <!-- Portuguese text -->
+                    <h2 class="portuguese">Programas e Ferramentas</h2>
+                    <!-- English text -->
+                    <h2 class="english">Programs and Tools</h2>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VSCode">
+                        <span class="tooltiptext">Visual Studio Code</span>
+                    </div>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg" alt="PyCharm">
+                        <span class="tooltiptext">Pycharm</span>
+                    </div>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                        <span class="tooltiptext">Git</span>
+                    </div>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                        <span class="tooltiptext">Github</span>
+                    </div>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" alt="Photoshop">
+                        <span class="tooltiptext">Photoshop</span>
+                    </div>
+                    <div class="tooltip">
+                        <img  class="skills" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg" alt="Notion">
+                        <span class="tooltiptext">Notion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects container and it's elements -->
+        <section id="projects">
+            <div class="projects-container">
+                <!-- Portuguese text -->
+                <h1 class="portuguese">Meus projetos</h1>
+                <!-- English text -->
+                <h1 class="english" style="margin-right: 63%;">My projects</h1>
+                <hr>
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-project">
+                            <img class="card-image" src="assets/mockups/weather-mockup.png" width="300px" alt="weather-app">
+                        </div>
+                        <div class="card-data">
+                            <h2>Weather App</h2>    
+                            <!-- Portuguese Text -->
+                            <p class="card-text portuguese">Aplicação desenvolvida em <mark class="cyan">Python</mark> utilizando o framework <mark class="cyan">Flet</mark> e API do <mark class="cyan">OpenWeatherMap</mark> que exibe data, hora e clima de uma localização específica.</p>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ Ver mais</a>
+                            <!-- English text-->
+                            <p class="card-text english">Application developed in <mark class="cyan">Python</mark> using the <mark class="cyan">Flet</mark> framework and <mark class="cyan">OpenWeatherMap API</mark> that displays date, time and weather of a specific location.</p>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/weather-app" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <img class="card-image" src="assets/mockups/qr-code-mockup.png" alt="qr-code-generator" width="300px">
+                        </div>
+                        <div class="card-data">
+                            <h2>3DS QR Codes</h2>
+                            <!-- Portuguese text -->
+                            <p class="card-text portuguese">Programa desenvolvido em <mark class="cyan">Python</mark> utilizando o módulo <mark class="cyan">CustomTkinter</mark> que gera códigos QR a partir de arquivos do Google Drive ou Internet Archive para facilitar a instalação de jogos no Nintendo 3DS.</p>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ Ver mais</a>
+                            <!-- English text -->
+                            <p class="card-text english">Program made in <mark class="cyan">Python</mark> using the <mark class="cyan">CustomTkinter</mark> module that generates QR codes from Google Drive or Internet Archive files to facilitate the installation of games on the Nintendo 3DS.</p>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/3ds-qrcode-generator" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <img src="assets/mockups/otica-mockup.png" alt="site-otica-landing-page" width="300px">
+                        </div>
+                        <div class="card-data">
+                            <h2>Ótica Landing Page</h2>
+                            <!-- Portuguese text -->
+                            <p class="card-text portuguese">Site desenvolvido em <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark> e <mark class="cyan">JavaScript</mark> que simula um site comercial de ótica, exibindo produtos, localização da loja, dentre outras informações.</p>
+                            <a class="card-repo portuguese" href="https://oticas-ad-store.vercel.app/" target="_blank">→ Deploy</a>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/optical-store-landing-page" target="_blank">→ Ver mais</a>
+                            <!-- English text -->
+                            <p class="card-text english">Website developed in <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark>, and <mark class="cyan">JavaScript</mark> that simulates a commercial optical store site, showcasing products, store location, and other information.</p>
+                            <a class="card-repo english" href="https://oticas-ad-store.vercel.app/" target="_blank">→ Deploy</a>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/optical-store-landing-page" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <img src="assets/mockups/cep-mockup.png" alt="site-buscador-de-cep" width="300px">
+                        </div>
+                        <div class="card-data">
+                            <h2>Buscador de CEP</h2>
+                            <!-- Portuguese text -->
+                            <p class="card-text portuguese">Site desenvolvido em <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark> e <mark class="cyan">JavaScript</mark> em conjunto com APIs do <mark class="cyan">ViaCEP</mark>, <mark class="cyan">Leaflet</mark> e <mark class="cyan">OpenStreetMap</mark> que faz a busca de códigos de endereçamento postal (CEP).</p>
+                            <a class="card-repo portuguese" href="https://lonelyalphaz.github.io/buscador-CEP/" target="_blank">→ Deploy</a>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/buscador-CEP" target="_blank">→ Ver mais</a>
+                            <!-- English text -->
+                            <p class="card-text english">Website developed in <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark>, and <mark class="cyan">JavaScript</mark> in conjunction with APIs from <mark class="cyan">ViaCEP</mark>, <mark class="cyan">Leaflet</mark>, and <mark class="cyan">OpenStreetMap</mark> that performs postal code (CEP) searches.</p>
+                            <a class="card-repo english" href="https://lonelyalphaz.github.io/buscador-CEP/" target="_blank">→ Deploy</a>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/buscador-CEP" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-project">
+                            <img src="assets/mockups/pomotimer-mockup.png" alt="site-buscador-de-cep" width="300px">
+                        </div>
+                        <div class="card-data">
+                            <h2>PomoTimer</h2>
+                            <!-- Portuguese text -->
+                            <p class="card-text portuguese"><mark class="cyan">[Em desenvolvimento]</mark> Site desenvolvido em <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark> e <mark class="cyan">JavaScript</mark> com base na técnina Pomodoro que auxilia na produtividade diária.</p>
+                            <a class="card-repo portuguese" href="https://lonelyalphaz.github.io/PomoTimer/" target="_blank">→ Deploy</a>
+                            <a class="card-repo portuguese" href="https://github.com/LonelyALpHaz/PomoTimer" target="_blank">→ Ver mais</a>
+                            <!-- English text -->
+                            <p class="card-text english"><mark class="cyan">[Under development]</mark> Website developed in <mark class="cyan">HTML5</mark>, <mark class="cyan">CSS3</mark>, and <mark class="cyan">JavaScript</mark> based on the Pomodoro technique, which aids in daily productivity.</p>
+                            <a class="card-repo english" href="https://lonelyalphaz.github.io/PomoTimer/" target="_blank">→ Deploy</a>
+                            <a class="card-repo english" href="https://github.com/LonelyALpHaz/PomoTimer" target="_blank">→ See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact container and it's elements -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="info">
+                    <img id="logo-bottom" src="assets/icon/site-logo-light.png" alt="site-logo">
+                    <!-- Portuguese text -->
+                    <h2 class="portuguese"><b>Contate-me em:</b></h2>
+                    <!-- English text -->
+                    <h2 class="english"><b>Contact me at:</b></h2>
+                </div>
+                <div class="contact-data">
+                    <div class="contact-item">
+                        <img id="phone-number" class="contact-icon" src="assets/SVG/social/phone.svg" alt="phone" width="32px">
+                        <h3 class="contact-text">+55 (83) 98843-1889</h3>
+                    </div>
+                    <div id="email-contact" class="contact-item">
+                        <img class="contact-icon" src="assets/SVG/social/email.svg" alt="email" width="32px">
+                        <h3 class="contact-text">dantas.arthur.contact@gmail.com</h3>
+                    </div>
+                    <div class="contact-item">
+                        <img class="contact-icon contact-link" src="assets/SVG/social/github.svg" alt="phone" width="32px">
+                        <a href="https://github.com/LonelyALpHaz" target="_blank" class="contact-text"><h3>GitHub</h3></a>
+                    </div>
+                    <div class="contact-item">
+                        <img class="contact-icon contact-link" src="assets/SVG/social/linkedin.svg" alt="phone" width="32px">
+                        <a href="https://www.linkedin.com/in/dantas-arthur" target="_blank" class="contact-text"><h3>Linkedin</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Portuguese text -->
+        <p class="portuguese footer-copy" >&copy; 2024 Arthur Dantas. Todos os direitos reservados.</p>
+        <!-- English text -->
+        <p class="english footer-copy">&copy; 2024 Arthur Dantas. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
