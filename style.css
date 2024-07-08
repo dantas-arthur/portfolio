@@ -611,6 +611,7 @@ mark.cyan {
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        margin-top: 20%;
         p {
             max-width: 100%;
             font-size: 1.2rem;
@@ -630,23 +631,32 @@ mark.cyan {
     }
 
     .image-container {
+        display: none;
         width: 80;
         max-width: 100%;
         margin-right: 10%;
     }
 
+    
+    #email {
+        width: 500px;
+        height: 40px;
+        position: absolute;
+        top: 120px;
+        left: 70px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    #copy-email {
+        display: none;
+    }
+    
     .social-media-container {
         display: flex;
         justify-content: center;
-        margin: 5% 25% 5%
-    }
-
-    #email {
-        position: absolute;
-    }
-
-    #copy-email {
-        display: none;
+        margin: 150px;
+        top: 580px;
     }
 
     /* About Contaiiner and it's elements */
