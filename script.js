@@ -55,7 +55,7 @@ function changeLanguage(language) {
             element.style.display = 'block';
         });
     }
-
+    
     currentLanguage = language; // Update current language
 }
 
