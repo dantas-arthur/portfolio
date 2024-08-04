@@ -168,7 +168,7 @@ footer {
         background-color: var(--color5);
     }
     /* Top navigator and it's elements */
-    .nav-bar {
+    .nav-bar, .menu {
         background-color: var(--color5);
         li, a {
             color: var(--color1);
@@ -178,7 +178,7 @@ footer {
         color: var(--color3);
         transition: .2s ease-in-out;
     }
-    .dark-mode-button, .lang-button, .contact-icon {
+    .dark-mode-button, .lang-button, .contact-icon, .open-menu, .close-menu {
         filter: invert();
     }
     .dark-mode-button:hover, .lang-button:hover {
@@ -518,45 +518,73 @@ mark.cyan {
 
     /* Body, headers, button and other elements */
 
-    body {
+    body, html {
         width: 100%;
+        height: 100%;
         margin: 0;
         padding: 0;
     }
     footer {
-        width: 200%;
+        width: 100%;
         padding-left: 0%;
         text-align: center;
         p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
+            text-wrap: nowrap;
         }
     }
     h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
         text-align: center;
     }
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
     p {
-        font-size: 1rem;
+        font-size: 1.5rem;
         max-width: 100%;
         padding: 0 10px;
     }
     hr {
-        margin-right: 2%;
+        margin-left: 90%;
+        width: 160%;
     }
 
     /* Top navigator bar and it's elements */
 
     .nav-bar {
-        padding: 8px 10px;
+        height: 10%;
     }
 
-    .site-name {
-        font-size: 1.2rem;
-        text-wrap: nowrap;
+    .logo-container {
+        margin-right: 45%;
+        scale: 1.3;
+    }
+
+    #logo-top {
+        margin: 0;
+        scale: 0.9;
+    }
+
+    .dark-mode-button, .lang-button {
+        width: 45px;
+    }
+
+    .dm-container {
+        padding-right: 15%;
+    }
+
+    .lang-menu {
+        padding-left: 5%;
+        width: 33%;
+        span {
+            font-size: 1.8rem;
+        }
+    }
+
+    .nav-bar {
+        padding: 8px 10px;
     }
     
     .menu {
@@ -580,13 +608,13 @@ mark.cyan {
 
     .open-menu {
         position: absolute;
-        margin-left: 90%;
+        margin-left: 80%;
     }
     
     .close-menu {
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 45px;
+        right: 50px;
     }
 
     .open-menu, .close-menu {
@@ -594,8 +622,9 @@ mark.cyan {
         cursor: pointer;
         img {
         width: 45px;
+        }
     }
-    }
+
     #check:checked ~ .menu {right: 0;}
 
     /* Home container and it's elements */
@@ -605,28 +634,26 @@ mark.cyan {
     }
 
     .home-container {
-        width: 200%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        margin-top: 20%;
-        p {
-            max-width: 100%;
-            font-size: 1.2rem;
-        }
+        width: 100%;
+        margin: 80% 45% 80%;
     }
 
     .text-container {
-        margin: 40% 0;
-        max-width: 100%;
+        margin: 50% 0;
+        width: 200%;
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
+            margin-left: 2%;
         }
         p {
-            font-size: 1.6rem;
-            margin: 6% 0;
+            font-size: 1.7rem;
+            max-width: 100%;
+            margin: 5% 5%; 
         }
     }
 
@@ -639,13 +666,13 @@ mark.cyan {
 
     
     #email {
-        width: 500px;
+        width: 480px;
         height: 40px;
         position: absolute;
-        top: 120px;
-        left: 70px;
+        top: 130px;
+        left: 55px;
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     
     #copy-email {
@@ -656,83 +683,92 @@ mark.cyan {
         display: flex;
         justify-content: center;
         margin: 150px;
-        top: 580px;
+        top: 700px;
+        img {
+            width: 100px;
+        }
     }
 
     /* About Contaiiner and it's elements */
 
     .about-container {
+        width: 100%;
         flex-direction: column;
-        width: 200%;
-        padding: 10% 0 20%;
         h1 {
-            margin-right: 5%;
+            padding-bottom: 5%;
+            text-wrap: nowrap;
         }
         hr {
-            margin-left: 8%;
+            width: 80%;
+            margin-left: 12%;
         }
     }
 
     .about-image {
-        width: 30%;
-        margin-right: 38%;
+        width: 70%;
+        margin-left: 30%;
     }
 
     .about-text {
+        width: 200%;
         margin: 0;
-        max-width: 100%;
+        padding: 0;
         text-align: center;
+        margin: 5% 0 20% 80%;
         p {
-            font-size: 1.5rem;
-            margin-left: 8%;
+            font-size: 1.8rem;
+            max-width: 80%;
+            margin-left: 12%;
         }
     }
     
     /* Skills container and it's elements */
 
     .skills-container {
-        width: 200%;
+        width: 100%;
         h1 {
-            margin-left: 58%;
+            margin-left: 145%;
+            padding-bottom: 5%;
             text-wrap: nowrap;
         }
     }
 
     .skills-icons {
-        margin: 5% 5% 2% 0%;
+        width: 200%;
+        margin: 10% 0% 10% 90%;
     }
 
     .skills {
         width: 80px;
         height: auto;
-        margin: 10% 0% 0% 0%;
     }
 
     .tooltip .tooltiptext {
-        top: 100%;
-        font-size: 1rem;
+        bottom: 100%;
+        font-size: 1.2rem;
     }
 
     /* Projects container and it's elements */
 
     .projects-container {
-        width: 200%;
+        width: 100%;
         padding: 10% 0% 10%;
         h1 {
-            margin-left: 58%;
+            margin-left: 145%;
+            padding-bottom: 5%;
             text-wrap: nowrap;
         }
     }
 
     .projects {
         width: 55%;
-        margin-right: 15%;
+        margin-right: 5%;
     }
 
     .card {
         margin: 5% 0;
         flex-direction: column;
-        width: 125%;
+        width: 270%;
     }
 
     .card-data {
@@ -744,10 +780,7 @@ mark.cyan {
     }
 
     .card-repo {
-        font-size: 1.2rem;
-        margin-left: auto;
-        text-align: right;
-        margin-right: 5%;
+        font-size: 1.6rem;
     }
 
     /* Contact container and it's elements */
@@ -759,7 +792,7 @@ mark.cyan {
     }
 
     .contact-container {
-        width: 200%;
+        width: 100%;
         text-align: center;
     }
 
