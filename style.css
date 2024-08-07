@@ -525,11 +525,11 @@ mark.cyan {
         padding: 0;
     }
     footer {
-        width: 100%;
+        width: 200%;
         padding-left: 0%;
         text-align: center;
         p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             text-wrap: nowrap;
         }
     }
@@ -564,7 +564,7 @@ mark.cyan {
 
     #logo-top {
         margin: 0;
-        scale: 0.9;
+        scale: 1;
     }
 
     .dark-mode-button, .lang-button {
@@ -601,6 +601,8 @@ mark.cyan {
             align-items: center;
             justify-content: center;
             text-align: center;
+            top: 30%;
+            margin: 5% 0 0 100%;
             font-size: 2.5rem;
             padding: 10px;
         }
@@ -640,7 +642,7 @@ mark.cyan {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        margin: 80% 45% 80%;
+        margin: 70% 45% 90%;
     }
 
     .text-container {
@@ -664,13 +666,14 @@ mark.cyan {
         margin-right: 10%;
     }
 
-    
+    .email-container {
+        margin: 85% 0 0 28%;
+    }
+
     #email {
         width: 480px;
         height: 40px;
         position: absolute;
-        top: 130px;
-        left: 55px;
         text-align: center;
         font-size: 1.5rem;
     }
@@ -682,8 +685,7 @@ mark.cyan {
     .social-media-container {
         display: flex;
         justify-content: center;
-        margin: 150px;
-        top: 700px;
+        margin: 150% 0 0 0;
         img {
             width: 100px;
         }
@@ -772,9 +774,10 @@ mark.cyan {
     }
 
     .card-data {
-        padding: 10px;
+        margin-right: 8%;
         p {
             font-size: 1.5rem;
+            margin-left: 6%;
             text-align: center;
         }
     }
@@ -792,7 +795,7 @@ mark.cyan {
     }
 
     .contact-container {
-        width: 100%;
+        width: 200%;
         text-align: center;
     }
 
