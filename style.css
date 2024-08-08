@@ -194,7 +194,7 @@ footer {
         color: var(--color1);
     }
     /* Projects container and it's elements */
-    .card-data {
+    .card, .card-data {
         background-color: var(--color5);
     }
     /* Contact container and it's elements */
