@@ -529,7 +529,7 @@ mark.cyan {
         padding-left: 0%;
         text-align: center;
         p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             text-wrap: nowrap;
         }
     }
@@ -643,7 +643,7 @@ mark.cyan {
         text-align: center;
         width: 100%;
         margin: 70% 45% 90%;
-        left: 5%;
+        padding-left: 5%;
     }
 
     .text-container {
@@ -668,7 +668,7 @@ mark.cyan {
     }
 
     .email-container {
-        top: 105%;
+        top: 110%;
         left: 20%;
     }
 
@@ -687,7 +687,7 @@ mark.cyan {
     .social-media-container {
         display: flex;
         justify-content: center;
-        margin: 150% 0 0 0;
+        margin: 165% 0 0 0;
         img {
             width: 100px;
         }
@@ -698,7 +698,7 @@ mark.cyan {
     .about-container {
         width: 100%;
         flex-direction: column;
-        left: 5%;
+        padding-left: 5%;
         h1 {
             padding-bottom: 5%;
             text-wrap: nowrap;
@@ -731,7 +731,7 @@ mark.cyan {
 
     .skills-container {
         width: 100%;
-        left: 5%;
+        padding-left: 5%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -759,7 +759,7 @@ mark.cyan {
     .projects-container {
         width: 100%;
         padding: 10% 0% 10%;
-        left: 5%;
+        padding-left: 5%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -769,7 +769,7 @@ mark.cyan {
 
     .projects {
         width: 55%;
-        margin-right: 3%;
+        margin-right: 5%;
     }
 
     .card {
@@ -779,10 +779,10 @@ mark.cyan {
     }
 
     .card-data {
-        margin-right: 10%;
+        margin-right: 8%;
         p {
             font-size: 1.5rem;
-            margin-left: 4%;
+            margin-left: 6%;
             text-align: center;
         }
     }
