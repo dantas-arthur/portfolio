@@ -602,7 +602,7 @@ mark.cyan {
             justify-content: center;
             text-align: center;
             top: 30%;
-            margin: 5% 0 0 100%;
+            margin: 5% 0 0 105%;
             font-size: 2.5rem;
             padding: 10px;
         }
@@ -643,6 +643,7 @@ mark.cyan {
         text-align: center;
         width: 100%;
         margin: 70% 45% 90%;
+        padding-left: 5%;
     }
 
     .text-container {
@@ -696,6 +697,7 @@ mark.cyan {
     .about-container {
         width: 100%;
         flex-direction: column;
+        padding-left: 10%;
         h1 {
             padding-bottom: 5%;
             text-wrap: nowrap;
@@ -728,6 +730,7 @@ mark.cyan {
 
     .skills-container {
         width: 100%;
+        padding-left: 10%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -754,7 +757,7 @@ mark.cyan {
 
     .projects-container {
         width: 100%;
-        padding: 10% 0% 10%;
+        padding: 10% 0% 10% 10%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -764,7 +767,7 @@ mark.cyan {
 
     .projects {
         width: 55%;
-        margin-right: 5%;
+        margin-right: 3%;
     }
 
     .card {
