@@ -643,7 +643,7 @@ mark.cyan {
         text-align: center;
         width: 100%;
         margin: 70% 45% 90%;
-        padding-left: 5%;
+        left: 5%;
     }
 
     .text-container {
@@ -668,7 +668,8 @@ mark.cyan {
     }
 
     .email-container {
-        margin: 85% 0 0 28%;
+        top: 105%;
+        left: 20%;
     }
 
     #email {
@@ -697,7 +698,7 @@ mark.cyan {
     .about-container {
         width: 100%;
         flex-direction: column;
-        padding-left: 10%;
+        left: 5%;
         h1 {
             padding-bottom: 5%;
             text-wrap: nowrap;
@@ -730,7 +731,7 @@ mark.cyan {
 
     .skills-container {
         width: 100%;
-        padding-left: 10%;
+        left: 5%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -757,7 +758,8 @@ mark.cyan {
 
     .projects-container {
         width: 100%;
-        padding: 10% 0% 10% 10%;
+        padding: 10% 0% 10%;
+        left: 5%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -777,10 +779,10 @@ mark.cyan {
     }
 
     .card-data {
-        margin-right: 8%;
+        margin-right: 10%;
         p {
             font-size: 1.5rem;
-            margin-left: 6%;
+            margin-left: 4%;
             text-align: center;
         }
     }
