@@ -547,8 +547,8 @@ mark.cyan {
         padding: 0 10px;
     }
     hr {
-        margin-left: 90%;
-        width: 160%;
+        margin-left: 95%;
+        width: 175%;
     }
 
     /* Top navigator bar and it's elements */
@@ -704,8 +704,8 @@ mark.cyan {
             text-wrap: nowrap;
         }
         hr {
-            width: 80%;
-            margin-left: 12%;
+            width: 85%;
+            margin-left: 10%;
         }
     }
 
@@ -775,7 +775,7 @@ mark.cyan {
     .card {
         margin: 5% 0;
         flex-direction: column;
-        width: 270%;
+        width: 280%;
     }
 
     .card-data {
