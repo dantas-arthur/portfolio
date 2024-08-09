@@ -761,15 +761,15 @@ mark.cyan {
         padding: 10% 0% 10%;
         padding-left: 5%;
         h1 {
-            margin-left: 145%;
+            margin-left: 150%;
             padding-bottom: 5%;
             text-wrap: nowrap;
         }
     }
 
     .projects {
-        width: 55%;
-        margin-right: 5%;
+        width: 60%;
+        margin-right: 15%;
     }
 
     .card {
@@ -779,10 +779,10 @@ mark.cyan {
     }
 
     .card-data {
-        margin-right: 8%;
+        margin-right: 5%;
         p {
             font-size: 1.5rem;
-            margin-left: 6%;
+            max-width: 100%;
             text-align: center;
         }
     }
