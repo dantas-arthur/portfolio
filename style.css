@@ -698,7 +698,7 @@ mark.cyan {
     .about-container {
         width: 100%;
         flex-direction: column;
-        padding-left: 5%;
+        padding-left: 10%;
         h1 {
             padding-bottom: 5%;
             text-wrap: nowrap;
@@ -731,7 +731,7 @@ mark.cyan {
 
     .skills-container {
         width: 100%;
-        padding-left: 5%;
+        padding-left: 10%;
         h1 {
             margin-left: 145%;
             padding-bottom: 5%;
@@ -759,14 +759,13 @@ mark.cyan {
     .projects-container {
         width: 100%;
         padding: 10% 0% 10%;
-        padding-left: 5%;
+        padding-left: 10%;
         h1 {
             margin-left: 150%;
             padding-bottom: 5%;
             text-wrap: nowrap;
         }
     }
-
     .projects {
         width: 60%;
         margin-right: 15%;
