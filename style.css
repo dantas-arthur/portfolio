@@ -669,15 +669,15 @@ mark.cyan {
 
     .email-container {
         top: 105%;
-        left: 20%;
+        left: 10%;
     }
 
     #email {
-        width: 480px;
-        height: 40px;
+        width: 570px;
+        height: 45px;
         position: absolute;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     #copy-email {
@@ -722,9 +722,9 @@ mark.cyan {
         text-align: center;
         margin: 5% 0 20% 80%;
         p {
-            font-size: 1.8rem;
-            max-width: 80%;
-            margin-left: 15%;
+            font-size: 1.7rem;
+            max-width: 100%;
+            margin-left: 10%;
             padding-top: 5%;
         }
     }
