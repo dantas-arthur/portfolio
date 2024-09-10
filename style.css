@@ -521,7 +521,7 @@ mark.cyan {
         padding-left: 0%;
         text-align: center;
         p {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             text-wrap: nowrap;
         }
     }
@@ -563,6 +563,7 @@ mark.cyan {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 90%;
+        padding-left: 10%;
     }   
 
     .lang-menu {
