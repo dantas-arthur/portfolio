@@ -563,7 +563,6 @@ mark.cyan {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 90%;
-        padding-right: 10%;
     }   
 
     .lang-menu {
