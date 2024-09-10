@@ -703,7 +703,7 @@ mark.cyan {
 
     .about-image {
         width: 70%;
-        margin-left: 40%;
+        margin-left: 35%;
     }
 
     .about-text {
@@ -711,10 +711,10 @@ mark.cyan {
         margin: 0;
         padding: 0;
         text-align: center;
-        margin: 5% 0 20% 80%;
+        margin: 5% 0 10% 75%;
         p {
             font-size: 1.7rem;
-            max-width: 100%;
+            max-width: 90%;
             margin-left: 10%;
             padding-top: 5%;
         }
