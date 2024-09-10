@@ -1,34 +1,33 @@
 // Turn on/off dark mode
-
 function darkMode() {
     var element = document.body;
-    var darkbutton = document.getElementById("dark-mode-button");
+    var darkbuttonPortuguese = document.getElementById("dark-mode-button-portuguese");
+    var darkbuttonEnglish = document.getElementById("dark-mode-button-english");
     var topLogo = document.getElementById("logo-top");
     var bottomLogo = document.getElementById("logo-bottom");
+
     if (element.classList.toggle("dark-mode")) {
-        darkbutton.src = "assets/SVG/top-navigator/sun.svg";
-        topLogo.src = "assets/icon/site-logo-dark.png"
-        bottomLogo.src = "assets/icon/site-logo-dark.png"
+        darkbuttonPortuguese.src = "assets/SVG/top-navigator/sun.svg";
+        darkbuttonEnglish.src = "assets/SVG/top-navigator/sun.svg";
+        topLogo.src = "assets/icon/site-logo-dark.png";
+        bottomLogo.src = "assets/icon/site-logo-dark.png";
     } else {
-        darkbutton.src = "assets/SVG/top-navigator/moon.svg";
-        topLogo.src = "assets/icon/site-logo-light.png"
-        bottomLogo.src = "assets/icon/site-logo-light.png"
-    };
-}
-
-// Toggle options to select language
-
-function toggleLanguageMenu() {
-    var langMenu = document.getElementById("langMenu");
-    if (langMenu.style.display === "none") {
-        langMenu.style.display = " block";
-    } else {
-        langMenu.style.display = "none";
+        darkbuttonPortuguese.src = "assets/SVG/top-navigator/moon.svg";
+        darkbuttonEnglish.src = "assets/SVG/top-navigator/moon.svg";
+        topLogo.src = "assets/icon/site-logo-light.png";
+        bottomLogo.src = "assets/icon/site-logo-light.png";
     }
 }
 
-// Select site language function
+// Toggle options to select language
+function toggleLanguageMenu() {
+    var langMenus = document.querySelectorAll('.lang-menu');
+    langMenus.forEach(function(menu) {
+        menu.style.display = menu.style.display === "none" ? "block" : "none";
+    });
+}
 
+// Select language function
 var copied = document.getElementById("copy-email");
 var copySuccessMessageEnglish = "✓ Copied!";
 var copySuccessMessagePortuguese = "✓ Copiado!";
@@ -37,37 +36,41 @@ var currentLanguage = 'portuguese';
 function changeLanguage(language) {
     var englishElements = document.querySelectorAll('.english');
     var portugueseElements = document.querySelectorAll('.portuguese');
+    var langMenuPortuguese = document.getElementById("lang-menu-portuguese");
+    var langMenuEnglish = document.getElementById("lang-menu-english");
 
     if (language === 'english') {
-        copied.innerHTML = "⭠ Click to copy."
+        copied.innerHTML = "⭠ Click to copy.";
         englishElements.forEach(function(element) {
             element.style.display = 'block';
         });
         portugueseElements.forEach(function(element) {
             element.style.display = 'none';
         });
+        langMenuPortuguese.style.display = 'none'; // Hide Portuguese menu
+        langMenuEnglish.style.display = 'block'; // Show English menu
     } else if (language === 'portuguese') {
-        copied.innerHTML = "⭠ Clique para copiar."
+        copied.innerHTML = "⭠ Clique para copiar.";
         englishElements.forEach(function(element) {
             element.style.display = 'none';
         });
         portugueseElements.forEach(function(element) {
             element.style.display = 'block';
         });
+        langMenuPortuguese.style.display = 'block'; // Show Portuguese menu
+        langMenuEnglish.style.display = 'none'; // Hide English menu
     }
-    
+
     currentLanguage = language; // Update current language
+    toggleLanguageMenu(); // Close language menu after selection
 }
 
 // Click and copy function
-
 var span = document.getElementById("email");
 
 span.onclick = function() {
     document.execCommand("copy");
-    // remove fade-out (if exists)
     copied.classList.remove("fade-out", "hide");
-    // Add fade-in class
     copied.classList.add("fade-in", "show");
 
     if (currentLanguage === 'english') {
@@ -91,49 +94,5 @@ span.addEventListener("copy", function(event) {
     if (event.clipboardData) {
         event.clipboardData.setData("text/plain", span.textContent);
         console.log(event.clipboardData.getData("text"));
-    };
-})
-
-// Go to top button function
-
-var mybutton = document.getElementById("topbtn");
-
-window.onscroll = function() {scroolFunction()};
-
-function scroolFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    };
-}
-
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-// Auto scrool to a specific div
-
-document.querySelectorAll('.topbuttons').forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            const offset = 50; // Ajuste este valor conforme necessário
-            const elementPosition = targetElement.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - offset;
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth"
-            });
-        }
-    });
+    }
 });
-
-// Refresh page function
-
-function refreshPage() {
-    window.location.reload();
-}

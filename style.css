@@ -94,7 +94,7 @@ footer {
     display: flex;
     margin-left: 50%;
     li {
-        padding-left: 30px;
+        padding-left: 20px;
     }
     a {
         font-size: 1.3rem;
@@ -112,8 +112,8 @@ footer {
 .lang-menu {
     display: none;
     position: absolute;
-    width: 7.5%;
-    top: 90%;
+    width: 500%;
+    top: 150%;
     background-color: var(--color2);
     padding: 10px;
     border-radius: 5px;
@@ -128,14 +128,6 @@ footer {
     color: var(--color4);
     cursor: pointer;
     padding: 5px 0;
-}
-
-.lang-button {
-    margin-left: 50%;
-}
-
-.dark-mode-button {
-    margin-left: 100%;
 }
 
 .dark-mode-button, .lang-button {
@@ -457,7 +449,7 @@ footer {
 
 .info {
     img {
-        margin-left: 12%;
+        margin-left: 15%;
     }
 }
 
@@ -554,32 +546,30 @@ mark.cyan {
     /* Top navigator bar and it's elements */
 
     .nav-bar {
-        height: 8%;
+        height: 10%;
     }
 
     .logo-container {
-        margin-right: 45%;
-        transform: scale(1.1);
-    }
-
-    #logo-top {
-        margin: 0;
-        scale: 1;
+        margin-right: 110%;
+        transform: scale(1.4);
     }
 
     .dark-mode-button, .lang-button {
-        width: 50px;
+        position: relative;
+        width: 64px;
     }
 
-    .dm-container {
-        padding-right: 15%;
-    }
+    .dm-lang-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 90%;
+        padding-right: 10%;
+    }   
 
     .lang-menu {
-        padding-left: 5%;
-        width: 33%;
+        width: auto;
         span {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
     }
 
@@ -601,7 +591,7 @@ mark.cyan {
             align-items: center;
             justify-content: center;
             text-align: center;
-            top: 30%;
+            top: 20%;
             margin: 5% 0 0 105%;
             font-size: 2.5rem;
             padding: 10px;
@@ -615,15 +605,15 @@ mark.cyan {
     
     .close-menu {
         position: absolute;
-        top: 45px;
-        right: 50px;
+        top: 35px;
+        right: 40px;
     }
 
     .open-menu, .close-menu {
         display: block;
         cursor: pointer;
         img {
-        width: 50px;
+        width: 64px;
         }
     }
 
@@ -748,7 +738,7 @@ mark.cyan {
     }
 
     .skills {
-        width: 80px;
+        width: 90px;
         height: auto;
     }
 

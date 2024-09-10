@@ -23,32 +23,60 @@
                         <input type="checkbox" id="check">
                         <span class="menu">
                             <label for="check" class="close-menu"><img src="assets/SVG/top-navigator/close.svg" alt="close menu button"></label>
-                            <!-- Portuguese text -->
+                            <!-- Menu de idiomas -->
                             <ul class="portuguese">
                                 <li><a class="nav-button" href="#home">Home</a></li>
                                 <li><a class="nav-button" href="#about">Sobre</a></li>
                                 <li><a class="nav-button" href="#skills">Skills</a></li>
                                 <li><a class="nav-button" href="#projects">Projetos</a></li>
                                 <li><a class="nav-button" href="#contact">Contato</a></li>
-                            </ul>
-                            <!-- English text -->
-                            <ul class="english">
+                                <span class="dm-lang-container">
+                                    <li>
+                                        <a href="#">
+                                            <label class="lang-container" onclick="toggleLanguageMenu()">
+                                                <img class="lang-button" src="assets/SVG/top-navigator/language.svg" alt="select language" width="32px">
+                                                <div class="lang-menu" id="lang-menu-portuguese">
+                                                    <span class="lang-option" onclick="changeLanguage('english')">English</span>
+                                                    <span class="lang-option" onclick="changeLanguage('portuguese')">Português</span>
+                                                </div>
+                                            </label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img id="dark-mode-button-portuguese" onclick="darkMode()" class="dark-mode-button" src="assets/SVG/top-navigator/moon.svg" alt="dark mode button">
+                                        </a>
+                                    </li>
+                                </span>
+                            </ul>   
+                            <!-- Menu em inglês -->
+                            <ul class="english" style="display: none;">
                                 <li><a class="nav-button" href="#home">Home</a></li>
                                 <li><a class="nav-button" href="#about">About</a></li>
                                 <li><a class="nav-button" href="#skills">Skills</a></li>
                                 <li><a class="nav-button" href="#projects">Projects</a></li>
                                 <li><a class="nav-button" href="#contact">Contact</a></li>
+                                <span class="dm-lang-container">
+                                    <li>
+                                        <a href="#">
+                                            <label class="lang-container" onclick="toggleLanguageMenu()">
+                                                <img class="lang-button" src="assets/SVG/top-navigator/language.svg" alt="select language" width="32px">
+                                                <div class="lang-menu" id="lang-menu-english">
+                                                    <span class="lang-option" onclick="changeLanguage('english')">English</span>
+                                                    <span class="lang-option" onclick="changeLanguage('portuguese')">Português</span>
+                                                </div>
+                                            </label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img id="dark-mode-button-english" onclick="darkMode()" class="dark-mode-button" src="assets/SVG/top-navigator/moon.svg" alt="dark mode button">
+                                        </a>
+                                    </li>
+                                </span>
                             </ul>
                         </span>
                         <label for="check" class="open-menu"><img class="menu-btn" src="assets/SVG/top-navigator/menu.svg" alt="menu button"></label>
-                        <label class="lang-container" onclick="toggleLanguageMenu()">
-                            <img class="lang-button" src="assets/SVG/top-navigator/language.svg" alt="select language" width="32px">
-                            <div class="lang-menu" id="langMenu">
-                                <span class="lang-option" onclick="changeLanguage('english')">English</span>
-                                <span class="lang-option" onclick="changeLanguage('portuguese')">Português</span>
-                            </div>
-                        </label>
-                        <label class="dm-container"><img id="dark-mode-button" onclick="darkMode()" class="dark-mode-button" src="assets/SVG/top-navigator/moon.svg" alt="dark mode button"></label>
                     </ul>
                 </nav>
             </header>
