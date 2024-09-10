@@ -568,6 +568,7 @@ mark.cyan {
 
     .lang-menu {
         width: auto;
+        padding-right: 10%;
         span {
             font-size: 2rem;
         }
