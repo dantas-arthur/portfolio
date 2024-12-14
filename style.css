@@ -358,6 +358,22 @@ footer {
     opacity: 1;
 }
 
+/* Certificates container and it's elements */
+
+.certificates-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5%;
+    h1 {
+        margin-right: 54%;
+    }
+    h2 {
+        margin-bottom: 5%;
+    }
+}
+
 /* Projects container and it's elements */
 
 .projects-container {
